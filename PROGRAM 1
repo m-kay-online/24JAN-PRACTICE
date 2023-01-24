@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+class File {
+    private:
+    ofstream file1;
+public:
+      File(string fileName){
+          file.open(fileName);
+      }
+      ~File(){
+          file1.close();
+      }
+      void writeLine(string data){
+          file1<<data<<endl;
+      }
+};
+
+class Employee{
+    public:
+    string name;
+    int ID, salary;
+    
+    Employee(string n, int id, int salary){
+        this->name = name;
+        ID = id;
+        this->salary = salary;
+    }
+    
+    public:
+    save(string fileName){
+        File(fileName);
+        file.writeLine(name);
+        file.writeLine(to_string(id));
+        file.writeLine();
+    }
+};
+
+int main(){
+    
+}
